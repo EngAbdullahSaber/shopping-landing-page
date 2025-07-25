@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowLeft, ShoppingBag, CreditCard, MapPin } from "lucide-react";
@@ -15,11 +16,7 @@ const checkoutSteps = [
   { id: 3, title: "Confirmation", icon: ShoppingBag },
 ];
 
-interface CheckoutProps {
-  onBack: () => void;
-}
-
-export default function Checkout({ onBack }: CheckoutProps) {
+export default function CheckoutPage() {
   const [currentStep, setCurrentStep] = useState(1);
 
   const handleNext = () => {
@@ -32,7 +29,6 @@ export default function Checkout({ onBack }: CheckoutProps) {
 
   const handleStartOver = () => {
     setCurrentStep(1);
-    onBack();
   };
 
   const renderStepContent = () => {
@@ -60,14 +56,13 @@ export default function Checkout({ onBack }: CheckoutProps) {
           <motion.button
             whileHover={{ scale: 1.05, x: -2 }}
             whileTap={{ scale: 0.95 }}
-            onClick={onBack}
             className="flex items-center text-gray-600 hover:text-gray-800 transition-colors"
           >
             <ArrowLeft className="w-5 h-5 mr-2" />
-            <Link href={"/"}>Back to Cart</Link>
+            <Link href="/">Back to Cart</Link>
           </motion.button>
           <h1 className="text-3xl font-bold text-gray-800">Checkout</h1>
-          <div className="w-20"></div> {/* Spacer for centering */}
+          <div className="w-20" /> {/* Spacer */}
         </motion.div>
 
         {/* Progress Steps */}
