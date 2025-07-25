@@ -190,7 +190,7 @@ export default function CheckoutForm({ onNext, onBack }: CheckoutFormProps) {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2 flex items-center">
+            <label className="  text-sm font-medium text-gray-700 mb-2 flex items-center">
               <Mail className="w-4 h-4 mr-2 text-gray-500" />
               Email Address *
             </label>
@@ -227,7 +227,7 @@ export default function CheckoutForm({ onNext, onBack }: CheckoutFormProps) {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2 flex items-center">
+            <label className="  text-sm font-medium text-gray-700 mb-2 flex items-center">
               <Phone className="w-4 h-4 mr-2 text-gray-500" />
               Phone Number *
             </label>
@@ -265,7 +265,7 @@ export default function CheckoutForm({ onNext, onBack }: CheckoutFormProps) {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2 flex items-center">
+          <label className="  text-sm font-medium text-gray-700 mb-2 flex items-center">
             <MapPin className="w-4 h-4 mr-2 text-gray-500" />
             Street Address *
           </label>
@@ -412,7 +412,7 @@ export default function CheckoutForm({ onNext, onBack }: CheckoutFormProps) {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2 flex items-center">
+          <label className="  text-sm font-medium text-gray-700 mb-2 flex items-center">
             <Building className="w-4 h-4 mr-2 text-gray-500" />
             Country
           </label>

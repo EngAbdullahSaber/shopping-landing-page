@@ -7,7 +7,7 @@ import Filter from "../components/Filter";
 import Cart from "../components/Cart";
 import { Product } from "../types/types";
 import { motion } from "framer-motion";
-import { ShoppingBag, Package, Filter as FilterIcon } from "lucide-react";
+import { ShoppingBag, Package } from "lucide-react";
 
 export default function Home() {
   const [filteredProducts, setFilteredProducts] = useState<Product[]>(products);

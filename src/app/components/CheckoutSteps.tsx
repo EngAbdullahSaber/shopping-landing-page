@@ -1,13 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Check, ShoppingBag, CreditCard, MapPin } from "lucide-react";
+import { Check } from "lucide-react";
 
 interface CheckoutStepsProps {
   currentStep: number;
   steps: Array<{
-    id: number,
-    title: string,
-    icon: React.ComponentType<any>,
+    id: number;
+    title: string;
+    icon: React.ComponentType<any>;
   }>;
 }
 
@@ -30,7 +30,7 @@ export default function CheckoutSteps({
           />
         </div>
 
-        {steps.map((step, index) => {
+        {steps.map((step) => {
           const isCompleted = currentStep > step.id;
           const isCurrent = currentStep === step.id;
           const IconComponent = step.icon;
