@@ -204,7 +204,8 @@ export default function Home() {
           </div>
 
           {/* Sidebar with Filter and Cart */}
-          <div className="lg:w-80 xl:w-96 space-y-6">
+          {/* Sidebar with Filter and Cart */}
+          <div className="lg:w-80 xl:w-96 h-fit sticky top-20 space-y-6 self-start">
             {/* Filter Section */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
